@@ -1280,6 +1280,9 @@ Featured Style
 
 /* For small mobile screens (below 576px) */
 @media (max-width: 576px) {
+  .featured{
+    margin-top: -92px;
+  }
   .featured .left-image img {
     width: 100%;
   }
