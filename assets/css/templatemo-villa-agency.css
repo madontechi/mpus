@@ -1027,6 +1027,9 @@ Banner Style
 Featured Style
 --------------------------------------------- 
 */
+.featured{
+  
+}
 
 .featured .left-image {
   position: relative;
@@ -1229,6 +1232,9 @@ Featured Style
 
 /* For mobile devices (between 576px and 767px) */
 @media (max-width: 767px) {
+  .featured{
+    margin-top: -120px;
+  }
   .featured .row {
     flex-direction: column;
     align-items: center;
@@ -1281,7 +1287,7 @@ Featured Style
 /* For small mobile screens (below 576px) */
 @media (max-width: 576px) {
   .featured{
-    margin-top: -92px;
+    margin-top: -120px;
   }
   .featured .left-image img {
     width: 100%;
