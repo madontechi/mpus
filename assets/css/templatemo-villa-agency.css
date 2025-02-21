@@ -1233,7 +1233,7 @@ Featured Style
 /* For mobile devices (between 576px and 767px) */
 @media (max-width: 767px) {
   .featured{
-    margin-top: -120px;
+    margin-top: -180px;
   }
   .featured .row {
     flex-direction: column;
@@ -1287,7 +1287,7 @@ Featured Style
 /* For small mobile screens (below 576px) */
 @media (max-width: 576px) {
   .featured{
-    margin-top: -120px;
+    margin-top: -180px;
   }
   .featured .left-image img {
     width: 100%;
@@ -2774,5 +2774,210 @@ testimonials
   
   #image-caption {
     font-size: 0.5rem;
+  }
+}
+
+
+
+/* services anad event page */
+ /* * Service Card * */
+ .service-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: #f35525;
+  margin-bottom: 10px;
+}
+
+.service-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+@media (max-width: 1024px) {
+  .service-card {
+      padding: 18px;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-card i {
+      font-size: 2.2rem;
+  }
+
+  .service-card h4 {
+      font-size: 1.1rem;
+  }
+
+  .service-card p {
+      font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+      padding: 16px;
+      margin-bottom: 20px; /* Adds spacing between stacked cards */
+  }
+
+  .service-card i {
+      font-size: 2rem;
+  }
+
+  .service-card h4 {
+      font-size: 1rem;
+  }
+
+  .service-card p {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+      padding: 14px;
+      margin-bottom: 15px; /* Reduces margin for smaller screens */
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .service-card i {
+      font-size: 1.8rem;
+  }
+
+  .service-card h4 {
+      font-size: 0.95rem;
+  }
+
+  .service-card p {
+      font-size: 0.75rem;
+  }
+}
+
+/* event card  */
+.events-section {
+  background-color: #f8f9fa;
+}
+
+.event-card {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-card h4 {
+  color: #f35525 !important;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.event-card p {
+  color: white !important;
+  font-size: 16px;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+/* For tablets and smaller screens (max-width: 991px) */
+@media (max-width: 991px) {
+  .event-card {
+      height: 220px;
+
+  }
+
+  .event-card h4 {
+      font-size: 20px;
+  }
+
+  .event-card p {
+      font-size: 14px;
+  }
+}
+
+/* For mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .event-card {
+      height: 200px;
+      margin-bottom: 15px;
+  }
+
+  .event-card .overlay {
+      padding: 15px;
+  }
+
+  .event-card h4 {
+      font-size: 18px;
+  }
+
+  .event-card p {
+      font-size: 13px;
+  }
+}
+
+/* For small mobile devices (max-width: 575px) */
+@media (max-width: 575px) {
+  .event-card {
+      height: 180px;
+  }
+
+  .event-card h4 {
+      font-size: 16px;
+  }
+
+  .event-card p {
+      font-size: 12px;
+  }
+}
+
+/* For extra small mobile screens (max-width: 400px) */
+@media (max-width: 400px) {
+  .event-card {
+      height: 160px;
+  }
+
+  .event-card h4 {
+      font-size: 15px;
+  }
+
+  .event-card p {
+      font-size: 11px;
   }
 }
